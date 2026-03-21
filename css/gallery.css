@@ -1,0 +1,556 @@
+:root {
+    --bg: #050505;
+    --surface: #0d0d0d;
+    --text: #f5f5f0;
+    --muted: #bdbdb5;
+    --line: #2a2a2a;
+    --line-strong: #f5f5f0;
+    --max-width: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.mono,
+.eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(90%, var(--max-width));
+    margin: 0 auto;
+}
+
+.noise {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    z-index: 9999;
+    background-image:
+            radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12) 0, transparent 22%),
+            radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.08) 0, transparent 18%);
+    mix-blend-mode: screen;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.96);
+    border-bottom: 2px solid var(--line-strong);
+}
+
+.nav {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 72px;
+    height: 46px;
+    padding: 0 1rem;
+    border: 2px solid var(--line-strong);
+    background: var(--text);
+    color: var(--bg);
+    font-size: 1.25rem;
+}
+
+.site-nav a {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    position: relative;
+}
+
+.site-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width 0.18s ease;
+}
+
+.site-nav a:hover::after {
+    width: 100%;
+}
+
+.section-lined {
+    border-bottom: 2px solid var(--line-strong);
+}
+
+.gallery-hero {
+    padding: 3rem 0 2rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+}
+
+.gallery-title {
+    margin: 0;
+    font-size: clamp(3rem, 10vw, 8rem);
+    line-height: 0.92;
+    text-transform: uppercase;
+}
+
+.gallery-subtitle {
+    max-width: 720px;
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.gallery-section {
+    padding: 2rem 0 4rem;
+}
+
+.gallery-stack {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+}
+
+.gallery-item,
+.schedule-group {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid var(--line-strong);
+    background: var(--surface);
+    overflow: hidden;
+}
+
+.gallery-item {
+    transition: 0.18s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.gallery-item:hover * {
+    color: inherit;
+}
+
+.gallery-item-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    padding: 2rem;
+    background: #000;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 420px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.01);
+}
+
+.gallery-item-featured {
+    border-width: 3px;
+}
+
+.gallery-item-featured .gallery-item-media {
+    min-height: 300px;
+    padding: 2.5rem 2rem;
+}
+
+.gallery-item-featured img {
+    max-height: 220px;
+}
+
+.gallery-item figcaption {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+    border-top: 2px solid var(--line-strong);
+}
+
+.gallery-item figcaption span {
+    color: var(--muted);
+}
+
+.gallery-item figcaption p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.schedule-group {
+    padding: 1.25rem;
+}
+
+.schedule-group-header {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--line-strong);
+    padding-bottom: 1rem;
+}
+
+.schedule-group-header h2 {
+    margin: 0 0 0.3rem;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+}
+
+.schedule-group-header p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.schedule-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0 0.75rem;
+    scroll-snap-type: x proximity;
+}
+
+.schedule-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.schedule-scroll::-webkit-scrollbar-track {
+    background: #111;
+    border: 1px solid var(--line);
+}
+
+.schedule-scroll::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+.schedule-card {
+    flex: 0 0 260px;
+    border: 2px solid var(--line-strong);
+    background: var(--surface);
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: 0.18s ease;
+    cursor: pointer;
+}
+
+.schedule-card:hover {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.schedule-card:hover * {
+    color: inherit;
+}
+
+.schedule-card-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    padding: 1rem;
+    background: #000;
+}
+
+.schedule-card img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.schedule-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.01);
+}
+
+.schedule-card figcaption {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+    border-top: 2px solid var(--line-strong);
+}
+
+.schedule-card figcaption span {
+    color: var(--muted);
+}
+
+.schedule-card figcaption p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    place-items: center;
+    padding: 2rem;
+    z-index: 2000;
+}
+
+.lightbox.open {
+    display: grid;
+}
+
+.lightbox img {
+    max-width: min(92vw, 1200px);
+    max-height: 85vh;
+    border: 2px solid var(--line-strong);
+    object-fit: contain;
+    background: #000;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 56px;
+    height: 56px;
+    border: 2px solid var(--line-strong);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.figma-link {
+    margin-top: 2rem;
+}
+
+.figma-link a {
+    display: inline-block;
+    padding: 1.2rem 1.6rem;
+    border: 2px solid var(--line-strong);
+    background: transparent;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.figma-label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+}
+
+.figma-title {
+    font-family: "Anton", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+}
+
+.figma-link a:hover {
+    background: var(--text);
+    color: var(--bg);
+    transform: translateY(-2px);
+}
+
+.figma-link a:hover .figma-label {
+    color: var(--bg);
+}
+
+.figma-panel {
+    margin-top: 2.5rem;
+    border: 2px solid var(--line-strong);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background: var(--surface);
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.figma-panel-left {
+    padding: 2rem;
+    border-right: 2px solid var(--line-strong);
+}
+
+.figma-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.figma-panel-left h2 {
+    margin: 0.4rem 0 0.6rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+}
+
+.figma-panel-left p {
+    margin: 0;
+    color: var(--muted);
+    max-width: 420px;
+}
+
+/* RIGHT SIDE */
+.figma-panel-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figma-panel-right a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.2rem 1.6rem;
+    border: 2px solid var(--line-strong);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.figma-panel:hover .figma-panel-right a {
+    background: var(--text);
+    color: var(--bg);
+    transform: translateY(-2px);
+}
+
+.figma-panel-right .arrow {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .gallery-item figcaption,
+    .schedule-group-header,
+    .schedule-card figcaption {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-title {
+        font-size: clamp(2.8rem, 16vw, 5rem);
+    }
+
+    .gallery-subtitle {
+        font-size: 1rem;
+    }
+
+    .gallery-item-media {
+        min-height: 280px;
+        padding: 1rem;
+    }
+
+    .gallery-item img {
+        max-height: 260px;
+    }
+
+    .gallery-item-featured .gallery-item-media {
+        min-height: 220px;
+    }
+
+    .gallery-item-featured img {
+        max-height: 140px;
+    }
+
+    .schedule-card {
+        flex: 0 0 85vw;
+    }
+
+    .schedule-card-media {
+        height: 300px;
+    }
+
+    .figma-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .figma-panel-left {
+        border-right: none;
+        border-bottom: 2px solid var(--line-strong);
+    }
+
+    .figma-panel-right {
+        padding: 1.5rem;
+    }
+}

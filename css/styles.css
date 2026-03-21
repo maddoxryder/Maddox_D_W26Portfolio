@@ -239,10 +239,6 @@ code {
     color: var(--text);
 }
 
-.btn:hover {
-    background: var(--text);
-    color: var(--bg);
-}
 
 .hero-meta {
     list-style: none;
@@ -466,25 +462,9 @@ code {
     transition: 0.15s ease;
 }
 
-.work-card:hover,
-.doc-row:hover,
-.row-card:hover,
-.brutal-card:hover,
-.case-block:hover {
-    background: var(--text);
-    color: var(--bg);
-}
 
-.work-card:hover p,
-.work-card:hover .small-meta,
-.work-card:hover .text-link,
-.row-card:hover p,
-.row-card:hover .row-meta,
-.brutal-card:hover p,
-.case-block:hover p,
-.case-block:hover .card-kicker {
-    color: var(--bg);
-}
+
+
 
 .work-index {
     font-size: 0.9rem;
