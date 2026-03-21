@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maddox Duggan | Portfolio</title>
+    <meta
+            name="description"
+            content="Brutalist black-and-white portfolio for Maddox Duggan featuring capstone work, academic projects, and professional materials."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="site-header">
+    <div class="container nav">
+        <a href="#home" class="logo">MD</a>
+
+        <button
+                class="nav-toggle"
+                id="navToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+        >
+            MENU
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#credentials">Credentials</a>
+            <a href="#samples">Work</a>
+            <a href="#capstone">Capstone</a>
+            <a href="#documents">Docs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero section-lined">
+        <div class="container">
+            <div class="hero-top reveal">
+                <p class="eyebrow">Computer Programming & Analysis / Portfolio / 2026</p>
+            </div>
+
+            <div class="hero-grid">
+                <div class="hero-left reveal">
+                    <h1 class="hero-name">
+                        <span>Maddox</span>
+                        <span>Duggan</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I build software projects with a focus on practical systems,
+                        user experience, and clean execution across academic and team-based work.
+                    </p>
+
+                    <p class="type-line mono">
+                        <span id="typedText"></span>
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#capstone">View Capstone</a>
+                        <a class="btn btn-secondary" href="docs/resume.pdf" target="_blank">Download Resume</a>
+                    </div>
+
+                    <ul class="hero-meta mono">
+                        <li>Email / maddox.duggan@georgebrown.ca</li>
+                        <li>Location / Toronto, Ontario</li>
+                        <li>Focus / Web, mobile, software, documentation</li>
+                    </ul>
+                </div>
+
+                <aside class="hero-right reveal">
+                    <div class="hero-panel">
+                        <p class="panel-label mono">Featured Project</p>
+                        <h2>ShiftLite</h2>
+                        <p>
+                            A hospitality operations app built around messaging, scheduling,
+                            inventory visibility, and emergency alerts.
+                        </p>
+
+                        <div class="hero-tags mono">
+                            <span>team 37</span>
+                            <span>capstone</span>
+                            <span>mobile-first</span>
+                            <span>case study</span>
+                        </div>
+
+                        <a class="text-link" href="#documents">Open documentation archive →</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-track mono">
+                <span>SELECTED WORK</span>
+                <span>CAPSTONE CASE STUDY</span>
+                <span>SOFTWARE PORTFOLIO</span>
+                <span>BLACK + WHITE</span>
+                <span>SELECTED WORK</span>
+                <span>CAPSTONE CASE STUDY</span>
+                <span>SOFTWARE PORTFOLIO</span>
+                <span>BLACK + WHITE</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-lined">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">01</span>
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2>Bio / Intent / Direction</h2>
+                </div>
+            </div>
+
+            <div class="split-grid">
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Profile</p>
+                    <p class="large-copy">
+                        I am a programming student interested in building software that is
+                        useful, direct, and grounded in real user needs.
+                    </p>
+                    <p>
+                        My work includes websites, mobile concepts, team-based projects,
+                        requirements documentation, and front-end implementation. I enjoy
+                        taking an idea from structure and planning into something that feels
+                        deliberate and usable.
+                    </p>
+                </div>
+
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Career Goal</p>
+                    <p class="large-copy">
+                        I want to contribute to teams building practical systems with strong design,
+                        clear communication, and thoughtful user experience.
+                    </p>
+                    <p>
+                        I am especially interested in software that improves coordination,
+                        reduces friction, and turns messy real-world workflows into cleaner digital tools.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills-strip reveal">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+                <span>JAVA</span>
+                <span>PHP</span>
+                <span>SQL</span>
+                <span>GIT</span>
+                <span>REACT NATIVE</span>
+                <span>EXPO</span>
+                <span>UI DESIGN</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section section-lined">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">02</span>
+                <div>
+                    <p class="eyebrow">Professional Materials</p>
+                    <h2>Resume / Cover Letter</h2>
+                </div>
+            </div>
+
+            <div class="split-grid">
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Resume</p>
+                    <h3>Current Resume PDF</h3>
+                    <p>
+                        Add your current resume into the <code>docs</code> folder so the site
+                        can open it directly.
+                    </p>
+                    <a class="text-link" href="docs/resume.pdf" target="_blank">Open Resume →</a>
+                </div>
+
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Cover Letter</p>
+                    <h3>General Application Letter</h3>
+                    <p>
+                        Add a reusable cover letter tailored to internships, junior developer
+                        roles, or software opportunities.
+                    </p>
+                    <a class="text-link" href="docs/cover-letter.pdf" target="_blank">Open Cover Letter →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="credentials" class="section section-lined">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">03</span>
+                <div>
+                    <p class="eyebrow">Credentials</p>
+                    <h2>Education / Recognition</h2>
+                </div>
+            </div>
+
+            <div class="stack-grid">
+                <div class="row-card reveal">
+                    <div class="row-index mono">A</div>
+                    <div class="row-content">
+                        <h3>George Brown College</h3>
+                        <p>Computer Programming and Analysis</p>
+                    </div>
+                    <div class="row-meta mono">Expected Graduation / 2026</div>
+                </div>
+
+                <div class="row-card reveal">
+                    <div class="row-index mono">B</div>
+                    <div class="row-content">
+                        <h3>Relevant Focus</h3>
+                        <p>Web development, mobile apps, software design, requirements analysis, technical documentation</p>
+                    </div>
+                    <div class="row-meta mono">Portfolio Driven</div>
+                </div>
+
+                <div class="row-card reveal">
+                    <div class="row-index mono">C</div>
+                    <div class="row-content">
+                        <h3>Awards / Certifications</h3>
+                        <p>Add awards, certificates, or recognitions here if you want them shown</p>
+                    </div>
+                    <div class="row-meta mono">Optional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="samples" class="section section-lined">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">04</span>
+                <div>
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Academic Project Archive</h2>
+                </div>
+            </div>
+
+            <div class="work-grid">
+                <article class="work-card reveal">
+                    <p class="work-index mono">01</p>
+                    <h3>ShiftLite</h3>
+                    <p class="mono small-meta">Mobile App / Scheduling / Communication</p>
+                    <p>
+                        A mobile concept focused on shift visibility, coordination,
+                        and alerts in a team-based workflow.
+                    </p>
+                    <a class="text-link" href="#">Add project link →</a>
+                </article>
+
+                <article class="work-card reveal">
+                    <p class="work-index mono">02</p>
+                    <h3>Voting Application</h3>
+                    <p class="mono small-meta">PHP / MySQL / Web App</p>
+                    <p>
+                        A dynamic web application supporting topic creation, voting,
+                        authentication, and user interaction.
+                    </p>
+                    <a class="text-link" href="#">Add project link →</a>
+                </article>
+
+                <article class="work-card reveal">
+                    <p class="work-index mono">03</p>
+                    <h3>Student Wellness Hub</h3>
+                    <p class="mono small-meta">Team Project / System Design</p>
+                    <p>
+                        A collaborative software project centered on student services,
+                        system structure, and coordinated feature development.
+                    </p>
+                    <a class="text-link" href="#">Add project link →</a>
+                </article>
+
+                <article class="work-card reveal">
+                    <p class="work-index mono">04</p>
+                    <h3>Java / OOP Projects</h3>
+                    <p class="mono small-meta">Java / Algorithms / Object-Oriented Design</p>
+                    <p>
+                        Coursework and structured assignments focused on program design,
+                        logic, and maintainable code.
+                    </p>
+                    <a class="text-link" href="#">Add project link →</a>
+                </article>
+
+                <article class="work-card reveal">
+                    <p class="work-index mono">05</p>
+                    <h3>Front-End Work</h3>
+                    <p class="mono small-meta">HTML / CSS / JavaScript</p>
+                    <p>
+                        Interface-driven work emphasizing layout, responsiveness,
+                        component styling, and interaction.
+                    </p>
+                    <a class="text-link" href="#">Add project link →</a>
+                </article>
+
+                <article class="work-card reveal">
+                    <p class="work-index mono">06</p>
+                    <h3>Capstone Documentation Set</h3>
+                    <p class="mono small-meta">Planning / Analysis / Delivery</p>
+                    <p>
+                        A full project documentation package covering scope, backlog,
+                        requirements, planning, and delivery artifacts.
+                    </p>
+                    <a class="text-link" href="#documents">Jump to documents →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="capstone" class="section section-lined capstone-case">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">05</span>
+                <div>
+                    <p class="eyebrow">Capstone Case Study</p>
+                    <h2>Club Management Application</h2>
+                </div>
+            </div>
+
+            <div class="case-hero reveal">
+                <div class="case-statement">
+                    <p class="card-kicker mono">Project Statement</p>
+                    <p class="case-large">
+                        A hospitality operations platform designed to make communication,
+                        scheduling, and inventory awareness faster and more visible in high-pressure environments.
+                    </p>
+                </div>
+
+                <div class="case-meta mono">
+                    <div><span>Role</span><strong>Planning / Documentation / Dashboard Work</strong></div>
+                    <div><span>Type</span><strong>Team 37 Capstone</strong></div>
+                    <div><span>Focus</span><strong>Operations / Messaging / Scheduling</strong></div>
+                    <div><span>Format</span><strong>Mobile-first case study</strong></div>
+                </div>
+            </div>
+
+            <div class="case-grid">
+                <div class="case-block reveal">
+                    <p class="card-kicker mono">Problem</p>
+                    <h3>Busy service environments break down when communication is fragmented.</h3>
+                    <p>
+                        Staff often rely on manual coordination, inconsistent updates, and limited
+                        visibility into inventory, assignments, and urgent operational issues.
+                    </p>
+                </div>
+
+                <div class="case-block reveal">
+                    <p class="card-kicker mono">Response</p>
+                    <h3>A role-based digital system for coordination, awareness, and response.</h3>
+                    <p>
+                        The project centers on messaging, role-based access, scheduling visibility,
+                        inventory management, and emergency alerts to support smoother operations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-banner reveal">
+                <div class="banner-item">
+                    <span class="mono">01</span>
+                    <p>Real-Time Messaging</p>
+                </div>
+                <div class="banner-item">
+                    <span class="mono">02</span>
+                    <p>Scheduling Dashboard</p>
+                </div>
+                <div class="banner-item">
+                    <span class="mono">03</span>
+                    <p>Inventory Tracking</p>
+                </div>
+                <div class="banner-item">
+                    <span class="mono">04</span>
+                    <p>Emergency Alerts</p>
+                </div>
+                <div class="banner-item">
+                    <span class="mono">05</span>
+                    <p>Secure Access</p>
+                </div>
+                <div class="banner-item">
+                    <span class="mono">06</span>
+                    <p>Multi-Location Support</p>
+                </div>
+            </div>
+
+            <div class="split-grid">
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">My Contribution</p>
+                    <p class="large-copy">
+                        My work includes planning and documentation, portfolio support,
+                        scheduling/dashboard-related work, bug fixing, and final presentation support.
+                    </p>
+                    <p>
+                        This project highlights my ability to work through structure, deliverables,
+                        team collaboration, and software communication problems from both a planning
+                        and product perspective.
+                    </p>
+                </div>
+
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Reflection</p>
+                    <p class="large-copy">
+                        The project strengthened my ability to think in systems rather than isolated features.
+                    </p>
+                    <p>
+                        It improved my understanding of scope, documentation, requirements,
+                        feature prioritization, and presenting software as a complete case study.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="section section-lined">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">06</span>
+                <div>
+                    <p class="eyebrow">Documentation Archive</p>
+                    <h2>Capstone Files</h2>
+                </div>
+            </div>
+
+            <div class="docs-list">
+                <a class="doc-row reveal" href="docs/F25_T37_Project_Summary.pdf" target="_blank">
+                    <span class="mono">01</span>
+                    <span>Project Summary</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_Project_Vision.pdf" target="_blank">
+                    <span class="mono">02</span>
+                    <span>Project Vision</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_Project_Plan.pdf" target="_blank">
+                    <span class="mono">03</span>
+                    <span>Project Plan</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_High_Level_Requirements.pdf" target="_blank">
+                    <span class="mono">04</span>
+                    <span>High-Level Requirements</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_Requirements_Analysis_and_Design.pdf" target="_blank">
+                    <span class="mono">05</span>
+                    <span>Requirements Analysis</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_Wireframes.pdf" target="_blank">
+                    <span class="mono">06</span>
+                    <span>Wireframes / Mockups</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_Status_Reports.pdf" target="_blank">
+                    <span class="mono">07</span>
+                    <span>Status Reports</span>
+                    <span class="mono">PDF →</span>
+                </a>
+
+                <a class="doc-row reveal" href="docs/F25_T37_System_Implementation.pdf" target="_blank">
+                    <span class="mono">08</span>
+                    <span>System Implementation</span>
+                    <span class="mono">PDF →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-lined">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">07</span>
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Get In Touch</h2>
+                </div>
+            </div>
+
+            <div class="split-grid">
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Links</p>
+                    <ul class="contact-list">
+                        <li><strong>Email</strong> <a href="mailto:maddox.duggan@georgebrown.ca">maddox.duggan@georgebrown.ca</a></li>
+                        <li><strong>GitHub</strong> <a href="#" target="_blank">Add your GitHub link</a></li>
+                        <li><strong>LinkedIn</strong> <a href="#" target="_blank">Add your LinkedIn link</a></li>
+                    </ul>
+                </div>
+
+                <div class="brutal-card reveal">
+                    <p class="card-kicker mono">Demo</p>
+                    <p class="large-copy">
+                        Add your final portfolio or capstone demo link so the site acts as both archive and presentation layer.
+                    </p>
+                    <a class="text-link" href="videos/demo-link.txt" target="_blank">Open demo link file →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p class="mono">© 2026 Maddox Duggan / Built with HTML, CSS, JavaScript</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
